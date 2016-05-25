@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-may-2016, 11:59:49
+    Author     : Akyru
+*/
+
+
+i {
+  font-size: 2.5rem; }
+
+.icon-button {
+  border-radius: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  background: white; }
+  .icon-button span {
+    display: block;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all 0.3s; }
+  .icon-button:hover span {
+    display: block;
+    border-radius: 3.6rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: -1.8rem; }
+  .icon-button i {
+    background: none;
+    height: 3.6rem;
+    width: 3.6rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    line-height: 3.6rem;
+    transition: all 0.3s; }
+  
+.linkedin span {
+  background-color: black;
+} 
+
+.twitter span {
+  background-color: black; }
+
+.facebook span {
+  background-color: black; }
+
+.gplus span {
+  background-color: black; }
+
+.instagram span {
+  background-color: black; }
+
+.icon-button .fi-social-instagram{
+    color:black;
+}
+
+.icon-button .fi-social-linkedin{
+    color:black;
+}
+.icon-button .fi-social-twitter {
+  color: black; }
+
+.icon-button .fi-social-facebook {
+  color: black; }
+
+.icon-button .fi-social-google-plus {
+  color: black; }
+
+.icon-button:hover .fi-social-twitter, .icon-button:hover .fi-social-facebook, .icon-button:hover .fi-social-google-plus, .icon-button:hover .fi-social-linkedin, .icon-button:hover .fi-social-instagram {
+  color: white;
+  font-size: 2.6rem;
+  line-height: 3.9rem; }
