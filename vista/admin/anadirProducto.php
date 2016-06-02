@@ -1,23 +1,16 @@
 <?php
     include '../templates/headerAdmin.php';
 ?>
-
-<form action="../controlador/controladorInici.php" method="post">
-    <div class="row small-up-2 large-up-2"
-        <div class="row">
-          <div class="large-6 columns">
-            
-          </div>
-        </div>
+<form action="../../controlador/controladorInici.php" method="post">
         <div class="row">
             <div class="large-4 columns">
-                Nombre del producto: <input type="text" placeholder="nombre" name="nombrePro"/>
+                Nombre del producto: <input type="text" placeholder="Nombre" name="nombrePro"/>
             </div>
         </div>
         <div class="row">
             <div class="large-4 columns">
 
-                Precio: <input type="text" placeholder="nombre" name="precioPro"/>
+                Precio: <input type="text" placeholder="Precio" name="precioPro"/>
 
             </div>
         </div>
@@ -31,7 +24,7 @@
         <div class="row">
             <div class="large-4 columns">
 
-                Stock: <input type="text" placeholder="" name="stockPro"/>
+                Stock: <input type="text" placeholder="Stock" name="stockPro"/>
 
             </div>
         </div>
@@ -44,33 +37,43 @@
         </div>
         <div class="row">
             <div class="large-4 columns">
-
-            <label>Categoria</label>
-            <input type="radio" name="categoriaPro" value="1"><label>Camisas</label>
-            <input type="radio" name="categoriaPro" value="2"><label>Pantalones</label>
-            <input type="radio" name="categoriaPro" value="3"><label>Sudaderas</label>
-
+              Categoria: <select name="categoriaPro">
+                    <option value=1>Camisas</option>
+                    <option value=2>Pantalones</option>
+                    <option value=3>Sudaderas</option>
+                </select>
             </div>
         </div>
-         <div class="row">
-             
+    <div class="row">
+            <div class="large-4 columns">
+                Talla: <select name="tallaPro">
+                    <option value=1>S</option>
+                    <option value=2>M</option>
+                    <option value=3>L</option>
+                    <option value=4>XL</option>
+                </select>
+            </div>
         </div>
-        <div class="row">
-            <div class="large-9 columns">
-
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">HE LEÍDO Y ACEPTO LAS CONDICIONES DE COMPRA Y LA POLÍTICA DE PRIVACIDAD</label>
-
+    <div class="row">
+            <div class="large-4 columns">
+                Perfil Producto: <select name="perfilPro">
+                    <option value="hombre">HOMBRE</option>
+                    <option value="mujer">MUJER</option>
+                    <option value="nino/a">NIÑO/A</option>
+                </select>
             </div>
         </div>
         <div class="row">
-            <input type="submit" name="enviar">
+            
+                <!--<button class="small button" name="enviarProducte" type="submit">Enviar</button>-->
+                <input type="submit" value="Enviar" name="enviarProducte">
             <ul class="button-group">
-                <!--<button class="small button" name="enviar" type="submit">Enviar</button>-->
-
+                
                 <button class="small button [success secondary alert]" name="reset" type="reset">Limpiar</button>
             </ul>
         </div>
 </form>
+                 
 
                 <script src="../js/jquery-2.1.4.min.js"></script>
 		<script src="../js/vendor/foundation.js"></script>
