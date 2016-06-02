@@ -6,7 +6,7 @@
             //include '../modelo/clases/BaseDades.php';
             $connexio = mysqli_connect("localhost","root", "", "closetcloud");
            // $connexio->consultar("select imagenProducto from t_producto where idCategoria=1");
-           $sentencia = "select idProducto,nomProducto,imagenProducto from t_producto where idCategoria=1 and idTipoP=1";
+           $sentencia = "select idProducto,nomProducto,imagenProducto from t_producto where idCategoria=1 and perfilProducto='hombre'";
            $consulta = mysqli_query($connexio, $sentencia);
             while($row = mysqli_fetch_array($consulta))
             {
@@ -23,11 +23,8 @@
             
             
             </div>
-            <script src="js/jquery-2.1.4.min.js"></script>
-            <script src="js/vendor/foundation.js"></script>
-                <script>
-                  $(document).foundation();
-                </script>
+  
+
        
     <!--////////////////////////////////FOOTER///////////////////////////////////////////////////////////////// -->
 <?php include "templates/footer.php";?>

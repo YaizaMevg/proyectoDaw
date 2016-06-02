@@ -34,7 +34,7 @@ include 'templates/header.php';
 
                             <!--<a href="#" class="button expanded secondary" style="background-color: black;color:white;">Comprar Colección</a>-->
                             <div class="small-10  columns">
-                                <input type="submit" name="acceder">
+                                <input type="submit" name="buzon">
                                 
                             </div>
 			</div>
